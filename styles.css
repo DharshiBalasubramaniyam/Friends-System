@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+:root {
+    --main: rgb(195, 195, 195);
+}
+::selection {
+    background-color: rgb(161, 218, 161);
+}
+header {
+    background-color: var(--main);
+    padding: 20px 0;
+}
+header h1 {
+    text-align: center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 86vh;
+}
+.content, form {
+    width: 100%;
+    max-width:550px;
+    padding: 15px;
+    border: 1px solid var(--main);
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}.table {
+    height: 200px;
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr:nth-of-type(even) {
+    background-color: rgb(237, 237, 237);
+}
+table tr:hover {
+    background-color: rgb(212, 212, 212);
+}
+table td {
+    width: 50%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+table td button {
+    margin: 0;
+    background-color: rgb(188, 188, 255);
+    padding: 5px 15px;
+    font-size: 13px;
+}
+button, .btn {
+    padding: 7px 15px;
+    background-color: rgb(129, 193, 129);
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px 30px 0 0;
+}
+
+h2, h4, h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.input-box {
+    margin: 10px 0;
+}
+label {
+    width: 150px;
+    display: inline-block;
+}
+input{
+    padding: 5px;
+    margin-right: 5px;
+}
+.btns {
+    display: flex;
+    justify-content:center;
+    gap: 15px;
+}
+.btns button {
+    margin: 0;
+    margin-top: 15px;
+}
+small {
+    color: red;
+}
+.next-prev {
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+.next-prev button{
+    background-color: coral;
+    padding: 3px 10px;
+}
+.next {
+    position: absolute;
+    right: 0;
+}
+.prev {
+    position: absolute;
+    left: 0;
+}
+button:hover, .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    padding: 3px 0;
+    text-align: center;
+    font: 14px;
+    background-color: var(--main);
+}
